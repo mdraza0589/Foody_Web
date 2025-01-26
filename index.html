@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav>
+        <img class="image-container" src="logo.jpeg" alt="">
+        <input onkeypress="buttonClicked()" id="inputbox" class="mobileInput" type="text" placeholder="search food">
+        <ul class="click-item search-container">
+            <li onclick="clickedItem('cake')">Cake</li>
+            <li onclick="clickedItem('pizza')">Pizza</li>
+            <li onclick="clickedItem('burger')">Burger</li>
+            <input id="inputbox" type="text" placeholder="search here">
+            <button class="submit" type="submit" onclick="buttonClicked()">Search</button>
+            <i class="fa-solid fa-square-xmark" onclick="closeNav()"></i>
+            <div class="contact">
+                <li><h3>Contact</h3></li>
+                <li>6268053340</li>
+                <li>razamohammd0589@gmail.com</li>
+            </div>
+            
+        </ul>
+        <i class="fa-solid fa-bars menu" onclick="openMenu()"></i>
+    </nav>
+    <div class="main-container">
+        <main class="container">
+            <h4 class="fetch-data">Search your favorite food</h4>
+        </main>
+        <div class="details">
+            <button onclick="closeAboutBox()">X</button>
+            <div class="details-text">
+                This is about item
+            </div>
+            <div class="ingredien">
+
+            </div>
+        </div>
+    </div>
+    <div class="item-list">
+        <ul>
+            <li onclick="clickedItem('Baingan Bharta')">Baingan Bharta</li>
+            <li onclick="clickedItem('manchurian')">manchurian</li>
+            <li onclick="clickedItem('cake')">cake</li>
+            <li onclick="clickedItem('sandwiches')">sandwiches</li>
+            <li onclick="clickedItem('pitas')">pitas</li>
+            <li onclick="clickedItem(' fried chicken')"> fried chicken</li>
+            <li onclick="clickedItem('french fries')">french fries</li>
+            <li onclick="clickedItem('onion rings')">onion rings</li>
+            <li onclick="clickedItem('chicken nuggets')">chicken nuggets</li>
+            <li onclick="clickedItem('ice cream')">ice cream</li>
+            <li onclick="clickedItem('chaumin')">chaumin</li>
+            <li onclick="clickedItem('manchurian')">manchurian</li>
+            <li onclick="clickedItem('chips')">chips</li>
+            <li onclick="clickedItem('sandwiches')">sandwiches</li>
+            <li onclick="clickedItem('Burger')">Burger</li>
+            <li onclick="clickedItem(' fried chicken')"> fried chicken</li>
+            <li onclick="clickedItem('cake')">cake</li>
+            <li onclick="clickedItem('Burger')">Burger</li>
+            <li onclick="clickedItem('chicken nuggets')">chicken nuggets</li>
+            <li onclick="clickedItem('ice cream')">ice cream</li>
+
+        </ul>
+    </div>
+    <footer>Copy Right &copy; by Foody </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
